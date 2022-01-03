@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #fae364;
-  --secondary-color: #bb89b3;
+  --secondary-color: #cc7fcc;
 }
 
 * {
@@ -44,7 +44,8 @@ main {
   width: 80vw;
   height: 80vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  gap: 5em;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
 
@@ -88,18 +89,24 @@ span {
   color: var(--secondary-color);
 }
 
-.signup {
+main div {
+  padding: 3;
+}
+
+.button-signup {
   padding: 10px 20px;
+  color: white;
   background-color: var(--secondary-color);
   border: none;
   border-radius: 15px;
   margin-top: 30px;
   cursor: pointer;
-  box-shadow: 1px 1px 6px 1px;
+  /*box-shadow: 1px 1px 5px 1px;*/
 }
 
-.signup:hover {
+.button-signup:hover {
   background-color: white;
   box-shadow: none;
   transition-duration: 0.4s;
+  color: var(--secondary-color);
 }
