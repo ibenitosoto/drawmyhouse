@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
-  --primary-color: #fae364;
-  --secondary-color: #cc7fcc;
+  --first-color: #fae364;
+  --second-color: #cc7fcc;
+  --third-color: #ffffff;
 }
 
 * {
@@ -15,20 +16,25 @@ body {
   font-family: 'Poppins';
 }
 
+
 h1 {
   font-size: 3em;
 }
 
+h2 {
+  color: var (--third-color);
+}
+
 h3 {
   font-size: 1em;
-  background-color: var(--primary-color);
+  background-color: var(--first-color);
   text-align: center;
 }
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--first-color);
+  color: var(--third-color);
 }
 
 .navbar {
@@ -36,7 +42,7 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem;
-  background-color: var(--primary-color);
+  background-color: var(--first-color);
 }
 
 main {
@@ -67,26 +73,34 @@ main p {
 
 .menu a {
   font-size: 1.1rem;
-  color: var(--secondary-color);
+  color: var(--second-color);
   text-decoration: none;
   padding: 10px 20px;
 }
 
 .menu a:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--second-color);
+  color: var(--first-color);
   transition: ease-in, 0.3s;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
 }
 
 .brand {
   margin-top: -7px;
 }
 .brand span {
-  color: var(--secondary-color);
+  color: var(--second-color);
 }
 
 span {
-  color: var(--secondary-color);
+  color: var(--second-color);
 }
 
 main div {
@@ -95,8 +109,8 @@ main div {
 
 .button-signup {
   padding: 10px 20px;
-  color: white;
-  background-color: var(--secondary-color);
+  color: var(--third-color);
+  background-color: var(--second-color);
   border: none;
   border-radius: 15px;
   margin-top: 30px;
@@ -105,8 +119,26 @@ main div {
 }
 
 .button-signup:hover {
-  background-color: white;
+  background-color: var(--third-color);
   box-shadow: none;
   transition-duration: 0.4s;
-  color: var(--secondary-color);
+  color: var(--second-color);
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  color: var(--second-color);
+}
+
+input {
+  width: 20em;
+  border-radius: 5px;
+  border: none;
+}
+
+#message {
+  height: 10em;
 }
