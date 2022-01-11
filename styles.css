@@ -115,6 +115,8 @@ main div {
   border-radius: 15px;
   margin-top: 30px;
   cursor: pointer;
+  margin-right: 40px;
+ 
   /*box-shadow: 1px 1px 5px 1px;*/
 }
 
@@ -141,4 +143,10 @@ input {
 
 #message {
   height: 10em;
+}
+
+.sketch {
+  background-color: white;
+  width: 80vw;
+  height: 80vh;
 }
