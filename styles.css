@@ -154,3 +154,36 @@ canvas {
   border-style: dashed;
   border-color: var(--second-color);
 }
+
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+  padding: 4rem;
+}
+
+.auto-grid li {
+  list-style: none;
+  padding: 5rem 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  background: var(--third-color);
+  opacity: 0;
+}
+
+.auto-grid img {
+  width: 300px;
+  height: 200px;
+  list-style: none;
+  padding: 1em 1em;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.auto-grid li:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: scale(1.05);
+  transition: ease-in 0.2s;
+  background: var(--second-color);
+  color: var(--first-color);
