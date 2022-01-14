@@ -31,6 +31,8 @@ h3 {
   background-color: var(--first-color);
   text-align: center;
 }
+
+
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -49,16 +51,17 @@ main {
   margin: 0 auto;
   width: 80vw;
   height: 80vh;
-  margin-top: 12em;
   display: flex;
-  
-  
 }
 
 
 main p {
   margin-right: 5em;
   margin-top: 1em;
+}
+
+.signup {
+  margin-top: 10em;
 }
 
 .menu {
@@ -149,7 +152,7 @@ canvas {
   background-color: white;
   width: 80vw;
   height: 80vh;
-  margin-top: 30px;
+  margin-top: 5px;
   border: thick;
   border-style: dashed;
   border-color: var(--second-color);
@@ -163,15 +166,6 @@ canvas {
   padding: 4rem;
 }
 
-.auto-grid li {
-  list-style: none;
-  padding: 5rem 1rem;
-  text-align: center;
-  font-size: 1.2rem;
-  background: var(--third-color);
-  opacity: 0;
-}
-
 .auto-grid img {
   width: 300px;
   height: 200px;
@@ -181,9 +175,226 @@ canvas {
   font-size: 1.2rem;
 }
 
-.auto-grid li:hover {
-  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-  transform: scale(1.05);
+.auto-grid img:hover {
+  transform: scale(1.1);
   transition: ease-in 0.2s;
-  background: var(--second-color);
-  color: var(--first-color);
+}
+
+.chosen-sketches {
+/*   background-color: white; */
+  width: 80vw;
+  margin: auto;
+  height: 20vh;
+  border: thick;
+  border-style: dashed;
+  border-color: var(--second-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sketch-box {
+  font-size: large;
+  color: var(--second-color);
+  padding: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
