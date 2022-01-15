@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draw My House</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -22,39 +23,25 @@
                 </ul>
             </nav>
         </header>
-        <script>
-            function allowDrop(ev) {
-              ev.preventDefault();
-            }
-            
-            function drag(ev) {
-              ev.dataTransfer.setData("text", ev.target.id);
-            }
-            
-            function drop(ev) {
-              ev.preventDefault();
-              var data = ev.dataTransfer.getData("text");
-              ev.target.appendChild(document.getElementById(data));
-            }
-            </script>
+    
 
-    <div class="chosen-sketches" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="sketch-box">
-            Drag and drop your favourite sketches into the box!
+
+        <div id="chosen-sketches" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="sketch-box">
+                Drag and drop your favourite sketches into the box!
+            </div>
         </div>
-    </div>
 
-    <div class="auto-grid">
-        <img draggable="true" ondragstart="drag(event)" width="200" height="200" src="img/sketch1.jpg" alt="">
-        <img draggable="true" ondragstart="drag(event)" src="img/sketch2.jpg" alt="">
-        <img draggable="true" ondragstart="drag(event)" src="img/sketch3.jpg" alt="">
-        <img draggable="true" ondragstart="drag(event)" src="img/sketch4.jpg" alt="">
-        <img draggable="true" ondragstart="drag(event)" src="img/sketch5.jpg" alt="">
-        <img draggable="true" ondragstart="drag(event)" src="img/sketch6.jpg" alt="">
-        <img draggable="true" ondragstart="drag(event)" src="img/sketch7.jpg" alt="">
-        <img draggable="true" ondragstart="drag(event)" src="img/sketch8.jpg" alt="">
-    </div>
- 
+        <div class="auto-grid">
+            <img id="drag1" draggable="true" src="img/sketch1.jpg" ondragstart="drag(event)" width="300"">
+            <img id="drag2" draggable="true" src="img/sketch2.jpg" ondragstart="drag(event)" width="300"">
+            <img id="drag3" draggable="true" src="img/sketch3.jpg" ondragstart="drag(event)" width="300"">
+            <img id="drag4" draggable="true" src="img/sketch4.jpg" ondragstart="drag(event)" width="300"">
+            <img id="drag5" draggable="true" src="img/sketch5.jpg" ondragstart="drag(event)" width="300"">
+            <img id="drag6" draggable="true" src="img/sketch6.jpg" ondragstart="drag(event)" width="300"">
+            <img id="drag7" draggable="true" src="img/sketch7.jpg" ondragstart="drag(event)" width="300"">
+            <img id="drag8" draggable="true" src="img/sketch8.jpg" ondragstart="drag(event)" width="300"">
+        </div>
     </div>
 
     

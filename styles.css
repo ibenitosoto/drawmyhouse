@@ -180,7 +180,7 @@ canvas {
   transition: ease-in 0.2s;
 }
 
-.chosen-sketches {
+#chosen-sketches {
 /*   background-color: white; */
   width: 80vw;
   margin: auto;
